@@ -3,6 +3,7 @@ import MainLayout from "./layout/mainLayout";
 import Signup from "./Pages/SignUp";
 import HomePage from "./Pages/HomePage";
 import LoginPage from "./Pages/LoginPage";
+import EmailVerification from "./Pages/EmailVerification";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
           <Route element={<MainLayout />}>
           <Route path={"/"} element={<HomePage/>}/>
           <Route path={"/signup"} element={<Signup/>}/>
-          <Route path={"/login"} element={<LoginPage/>}/>
+            <Route path={"/login"} element={<LoginPage />} />
+            <Route path={ "verification"} element={<EmailVerification />} />
           </Route>
       </Routes>
       </BrowserRouter>

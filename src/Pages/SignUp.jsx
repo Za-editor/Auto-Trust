@@ -73,7 +73,7 @@ export default function Signup() {
     errors.password === "";
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#f5f7fa] relative overflow-hidden px-4 md:px-6">
+    <div className="min-h-[90vh] flex items-center justify-center bg-[#f5f7fa] relative overflow-hidden px-4 md:px-6">
       {/* Background Shapes */}
       <div className="absolute -left-20 -top-20 md:-left-40 md:-top-40 w-[250px] md:w-auto">
         <img

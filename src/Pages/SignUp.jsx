@@ -1,8 +1,9 @@
 import { useState } from "react";
+
 import { Link } from "react-router";
 
 export default function Signup() {
-   // form state
+  // form state
 
   const [form, setForm] = useState({
     name: "",
@@ -18,7 +19,7 @@ export default function Signup() {
   });
 
   // validation logic
-  
+
   const validateEmail = (value) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(value);
@@ -28,9 +29,8 @@ export default function Signup() {
     return value.length >= 8;
   };
 
-  
   // input change logic
- 
+
   const handleChange = (field, value) => {
     setForm({ ...form, [field]: value });
 
@@ -59,9 +59,6 @@ export default function Signup() {
       }
     }
   };
-
-
-  // Form completion check logic
 
   const allFilled =
     form.name &&
